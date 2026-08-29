@@ -1,20 +1,41 @@
-package day06;
+package day8;
+	class Student {
 
-public class demo {
-    public static void main(String[] args) {
+	    
+	    private int id;
+	    private String name;
 
-        StringBuilder sb = new StringBuilder();
+	  
+	    public void setId(int id) {
+	        this.id = id;
+	    }
 
-        for (int i = 1; i <= 5; i++) {
-            sb.append(i);
-        }
+	    
+	    public int getId() {
+	        return id;
+	    }
 
-        char first = sb.charAt(0);
-        System.out.println("first character: " + first);
+	    
+	    public void setName(String name) {
+	        this.name = name;
+	    }
 
-        System.out.println("stringBuilder: " + sb);
-        
-        sb.deleteCharAt(2);
-        System.out.println("after deleting: " +sb);
-    }
-}
+	  	    public String getName() {
+	        return name;
+	    }
+	}
+
+	public class demo {
+	    public static void main(String[] args) {
+
+	        Student s = new Student();
+
+	        
+	        s.setId(101);
+	        s.setName("Anand");
+
+	        
+	        System.out.println("Student ID: " + s.getId());
+	        System.out.println("Student Name: " + s.getName());
+	    }
+	}
